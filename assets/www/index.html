@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery.mobile.loadPage demo</title>
+	<link rel="stylesheet" href="js/jquery.mobile.structure-1.4.2.min.css">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="js/jquery.mobile.theme-1.4.2.min.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="cordova-2.2.0.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div data-role="page" id="init">
+		<div data-role="header">
+		  <h1>Esspia Service</h1>
+		</div>
+		<div role="main" class="ui-content">
+		    <form id="LoginForm" method="post">
+				<label for="LoginForm[username]">Usuario:</label>
+				<input type="text" name="LoginForm[username]" value="" data-clear-btn="true">
+				<label for="LoginForm[password]">Contraseña:</label>
+				<input type="password" name="LoginForm[password]" value="" data-clear-btn="true">
+				<p style="display: none;font-weight:bold;color:red;" id="loginError">Usuario y/o contraseña incorrectos.</p>
+				<button 
+					type="submit" 
+					name="submit" 
+					value="submit" 
+					data-theme="a"
+					data-corners="true"
+					data-shadow="true">
+						Ingresar
+				</button>
+			</form>
+		</div>
+	</div>
+ </div>
+</body>
+<script>
+		app.initialize();
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
